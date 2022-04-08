@@ -1,0 +1,6 @@
+#pragma once
+
+
+int foo(int a, int b);
+int bar(int a, int b);
+
