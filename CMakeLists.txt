@@ -16,4 +16,6 @@ add_executable(myExec test.c)
 
 target_compile_options(myExec PRIVATE -e)
 
+target_link_options(myExec PRIVATE --map $<TARGET_FILE:myExec>.map)
+
 target_link_libraries(myExec LINK_PUBLIC myLib)
